@@ -24,7 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1. Clone Repository
 
-- git clone https://github.com/broadaciousb/summaristProject.git
+- git clone https://github.com/broadaciousb/movieReactSite
 
 2. Install Dependencies
 
