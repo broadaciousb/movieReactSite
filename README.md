@@ -22,14 +22,20 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1. Clone Repository
 
+```bash
 - git clone https://github.com/broadaciousb/movieReactSite
+```
 
 2. Install Dependencies
 
+```bash
 - npm install
+```
 
 3. Run Development Server
 
+```bash
 - npm start
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
