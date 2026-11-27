@@ -8,9 +8,7 @@ A website where a user can search a database of movies, TV shows, and filter the
 - FontAwesome
 
 ## Features
-- Responsive design
-- Dynamic Data Representation
-- Search and filter input fields
+- Simple interface for searching movies and filtering results
 
 ## Future Improvements
 - Provie boiler plate movie poster where API doesn't provide an image.

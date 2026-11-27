@@ -13,6 +13,7 @@ const Results = ({
   openNavModal,
   closeNavModal,
 }) => {
+  const API_KEY = process.env.API_KEY;
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
   const [errorMessage, setErrorMessage] = useState([]);
@@ -64,7 +65,7 @@ const Results = ({
     setLoading(true);
 
     const { data } = await axios.get(
-      `https://www.omdbapi.com/?i=tt3896198&apikey=f54b9d83&s=${movieSearch}` +
+      `https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}=${movieSearch}` +
         `${filter}`
     );
 

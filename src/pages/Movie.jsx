@@ -5,6 +5,7 @@ import { Link, useParams } from "react-router-dom";
 //F&F Id tt1905041
 
 const Movie = () => {
+  const API_KEY = process.env.API_KEY;
   const [movieInfo, setMovieInfo] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -15,7 +16,7 @@ const Movie = () => {
       if (!id) return;
 
       const movieData = await axios.get(
-        `https://www.omdbapi.com/?i=${id}&apikey=f54b9d83`
+        `https://www.omdbapi.com/?i=${id}&apikey=${API_KEY}`
       );
 
       setMovieInfo(movieData.data);

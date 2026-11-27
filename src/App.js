@@ -4,9 +4,10 @@ import Home from "./pages/Home.jsx";
 import Results from "./pages/Results.jsx";
 import Movie from "./pages/Movie.jsx";
 
-// DATA API: https://www.omdbapi.com/?i=tt3896198&apikey=f54b9d83
-// POSTER API: http://img.omdbapi.com/?i=tt3896198&apikey=f54b9d83
-const movieAPI = `https://www.omdbapi.com/?i=tt3896198&apikey=f54b9d83`;
+// DATA API: https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}
+// POSTER API: http://img.omdbapi.com/?i=tt3896198&apikey={API_KEY}
+const API_KEY = process.env.API_KEY;
+const movieAPI = `https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}`;
 
 function App() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
